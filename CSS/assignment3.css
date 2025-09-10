@@ -1,7 +1,8 @@
 .main {
-  background-size: cover;
-  background-position: center;
-  position: relative;
+ width: 1000px;
+ height: 300px;
+ 
+ 
 }
 
 * {
@@ -62,14 +63,13 @@
   border: 1px solid white;
  border-top-left-radius: 10px;   
   border-top-right-radius: 10px; 
-  color: black;
-  height: 1300px;
+  color: white;
+  height: 1200px;
   
 }
 
 .h4{
-
-
+color: white;
 margin-left: 20px;
 font-family: 'Inter', sans-serif;
 font-weight: 500;
@@ -103,6 +103,13 @@ width: 200px;
 height: 200px;
 border-radius: 10px;
 position: absolute;
+font-family: 'Inter', sans-serif;
+font-weight: 500;
+font-size: large;
+color: white;
+text-align: center;
+ line-height: 170px;
+
 
 }
 
@@ -137,6 +144,28 @@ background-color:  #7758CF;
   margin-left: 550px;
   z-index: 1;
 }
-
+.footer{
+  left: 290px; 
+  width: 1192px;
+  background: #bd9292;
+  height: 250px;
+  position: absolute;
+  top: 1332px;
+   border-bottom-left-radius: 10px;   
+  border-bottom-right-radius: 10px;
+}
+.h43{
+  text-align: center;
+ line-height: 200px;
+ margin-left: 540px;
+}
+.png{
+  width: 60px;
+  height: 60px;
+  bottom: 35px;
+  margin-left: 1120px;
+  position: absolute;
+ 
+}
 
 
