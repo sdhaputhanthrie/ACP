@@ -1,0 +1,78 @@
+.main {
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  height: 227.4vh; /*remove the space right corner*/
+}
+.navbar {
+  background: #bd9292;
+  width: 1500px;
+  height: 80px;
+  position: fixed;
+  border-radius: 10px;
+  top: 0;
+  left: 10px;
+}
+.logo1 {
+  width: 70px;
+  height: 70px;
+  top: 5px;
+  bottom: 15px;
+  left: 100px;
+  position: relative;
+}
+.sidebar {
+  position: fixed;
+  top: 90px;
+  left: 10px;
+  width: 250px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  padding-top: 20px;
+  background-color: rgba(255,255,255,0.2); /*add opacity in only sidebar*/
+}
+
+.btn{
+  display: block;
+  width: 205px;
+  height: 50px;
+  margin: 22px;
+  padding: 15px;
+  background-color: #c49a6c; 
+  color: white;
+  text-align: center;
+  position: relative;
+  border-radius: 6px;
+  font-weight: bold;
+  opacity: 100%;
+
+}
+.line {
+  position: absolute;
+  top: 90px; /* adjust based on your layout */
+  left: 290px; /* offset from sidebar */
+  width: 1150px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  
+}
+
+.h4{
+width: 364;
+height: 87;
+margin-top: 30px;
+margin-left: 20px;
+font-family: 'Inter', sans-serif;
+font-weight: 500;
+font-style: Medium;
+font-size: 30px;
+
+}
+

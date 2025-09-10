@@ -1,163 +1,239 @@
+.navbar{
+    width: 1280;
+    height: 106;
+    
+    background: #A27172;
+    /* padding: 10px 40px; */
+    /*Used to put logo and text in to the same line in the navbar*/
+    
 
-* {
-  margin: 0;
-  padding: 0;
+    
 }
-
-
-.navbar {
-  width: 100%;
-  background: #a27172;
-  padding: 40px 0;
-  text-align: center; 
+*{
+    margin: 0;
+    
 }
 
 .ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 120px; 
+  margin-top: 10px;
+  padding: 20;
+  list-style: none; /*Used to remove the  (".") in the ul when using it to create the navbar content*/
+  margin-left: 345px;
+ 
+ 
 }
 
-.ul li {
-  display: inline-block; 
-  margin: 0 20px;
-}
 
 .navbar ul li a {
-  border: 1px solid #ffffff;
+  width: 139px;
+  height: 60px;
+  border: 1px solid #FFFFFF;
   border-radius: 10px;
-  font-family: "Inter", sans-serif;
+  text-align: center; 
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #ffffff;
-  padding: 10px 25px;
-  text-decoration: none;
+  color: #FFFFFF; 
+ 
+
 }
-
-
-.my {
-  border: 1px solid #a27172;
-  width: 1350px;
-  height: 400px;
-  margin: 0 28px 0 58px;
-  border-radius: 10px;
+.my{
+    border: 1px solid #A27172;
+    width: 1350px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 58px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-right: 28px;
+  
 }
-
-.text1 {
-  width: 300px;
-  height: 45px;
-  margin: 28px 0 0 30px;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  color: #a27172;
+.logo{
+    width: 80;
+    height: 80;
+    margin-top: 20px;
+    margin-left: 56px;
 }
-
-.text2 {
-  width: 800px;
-  height: 170px;
-  margin-left: 30px;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.text3 {
-  width: 800px;
-  height: 155px;
-  margin-left: 30px;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-}
-
 
 .img2 {
-  width: 250px;
-  height: auto;
-  margin-left: 700px;
+    width: 250px;
+    height: auto;
+    margin-left: 500px;
+    
+    
+}
+.text1{
+    width: 300px;
+    height: 45px;
+    margin-top: 28px;
+    margin-left: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:  #A27172;
+
+}
+.text2{
+    margin-top: px;
+    width: 800px;
+    height: 170px;
+    margin-left: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
+.text3{
+    width: 800px;
+    height: 155px;
+    top: 90px;
+    margin-left: 30px;
+    font-family:'Inter', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
 
-
-.input {
-  height: 50px;
-  width: 530px;
-  margin-left: 650px;
-  margin-top: 15px;
-  border-radius: 10px;
-  border: 1px solid #000000;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  padding-left: 30px;
+}
+.input1{
+   height: 50px;
+   width: 530px;
+   margin-left: 450px;
+   margin-top: 0px;
+   border-radius: 10px;
+   border-color:#000000;
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 20px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   padding-left: 30px;
 }
 
-.input1 {
-  margin-top: 0;
+.input2{
+   height: 50px;
+   width: 530px;
+   margin-left: 450px;
+   margin-top: 15px;
+   border-radius: 10px;
+   border-color:#000000;
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 20px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   padding-left: 30px;
+    
 }
 
-.btn {
-  width: 150px;
-  height: 50px;
-  margin-top: 30px;
-  border-radius: 10px;
-  margin-left: 650px;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: #000000;
-  background-color: #d9d9d9;
+.input3{
+   height: 50px;
+   width: 530px;
+   margin-left: 450px;
+   margin-top: 15px;
+   border-radius: 10px;
+   border-color:#000000;
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 20px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   padding-left: 30px;
 }
 
+.input4{
+   height: 50px;
+   width: 530px;
+   margin-left: 450px;
+   margin-top: 15px;
+   border-radius: 10px;
+   border-color:#000000;
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-style: Medium;
+   font-size: 20px;
+   line-height: 100%;
+   letter-spacing: 0%;
+   padding-left: 30px;
+}
 
-.footer {
-  color: #ffffff;
-  background-color: #7d8077;
+.btn{
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-left: 450px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+    background-color: #d9d9d9;
+
+}
+.footer{
+ color: #FFFFFF;
+  
+  background-color: #7D8077;
   padding: 40px 20px;
-  text-align: center;
+  
+  
 }
 
-.sidebar {
-  background-color: #a27172;
+
+.sidebar{
+  background-color: #A27172;
   padding: 25px;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid white ;
   width: 250px;
-  color: #ffffff;
+  margin-left: 150px;
+  margin-top: 15px;
+  color: #FFFFFF;
   font-size: 25px;
-  font-family: "Inter", sans-serif;
-  display: inline-block;   
-  margin-left: 50px;
-  margin-right: 50px;            
-  vertical-align: top;     
-}
+  font-style: medium;
+  font-family: 'Inter', sans-serif ;
 
-.sidebar ul {
+}
+.sidebar1{
+  display: inline-block;
+}
+.sidebar2{
+  display: inline-block;
+}
+.sidebar3{
+  display: inline-block;
+}
+.sidebar ul{
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 ;
 }
-
-.sidebar li {
+.sidebar li{
   margin-top: 1em;
 }
 
-.h2 {
-  font-size: 30px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-}
-.logologo {
-  float: left;            
-  margin-left: 20px;
- margin-top: -25px;
+.h2{
+    font-size: 30px;
+    font-family: 'Inter', sans-serif ;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
-.logologo img {
-  width: 80px;             /* adjust logo size */
-  height: auto;
-  display: block;
- 
-}
+
+
 
