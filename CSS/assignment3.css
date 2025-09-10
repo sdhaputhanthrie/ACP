@@ -1,6 +1,7 @@
 .main {
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 * {
@@ -59,20 +60,83 @@
   width: 1150px;
   padding: 20px;
   border: 1px solid white;
-  border-radius: 10px;
-  color: white;
+ border-top-left-radius: 10px;   
+  border-top-right-radius: 10px; 
+  color: black;
+  height: 1300px;
   
 }
 
 .h4{
-width: 364;
-height: 87;
-margin-top: 30px;
+
+
 margin-left: 20px;
 font-family: 'Inter', sans-serif;
 font-weight: 500;
 font-style: Medium;
 font-size: 30px;
+position: absolute;
 
 }
+.h42{
+  margin-top: 30px;
+}
+.h41{
+  margin-top: 450px;
+}
+
+
+.para1{
+
+font-family: 'Inter', sans-serif;
+font-weight: 500;
+font-style: Medium;
+position: absolute;
+top: 140px;
+margin-left: 20px;
+font-size: 20px;
+
+}
+
+.box{
+width: 200px;
+height: 200px;
+border-radius: 10px;
+position: absolute;
+
+}
+
+.box1{
+top: 550px;
+margin-left: 20px;
+background-color:  #7758CF;
+}
+
+.box2{
+  background-color: #E09191;
+  top: 690px;
+  margin-left: 150px;
+}
+
+.box3{
+  background-color:#D7AB53;
+  top: 830px;
+  margin-left:300px ;
+  z-index: 3;
+}
+
+.box4{
+  background-color:#63BE92;
+  top:690px ;
+  margin-left: 450px;
+  z-index: 2;
+}
+.box5{
+  background-color:#997ADB ;
+  top: 550px;
+  margin-left: 550px;
+  z-index: 1;
+}
+
+
 
