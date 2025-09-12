@@ -14,7 +14,7 @@
   background: #bd9292;
   width: 1500px;
   height: 80px;
-  position: fixed;
+  position: absolute;
   border-radius: 10px;
   top: 0;
   left: 10px;
@@ -28,11 +28,11 @@
   position: relative;
 }
 .sidebar {
-  position: fixed;
-  top: 90px;
+  position: absolute;
+  top: 140px;
   left: 10px;
   width: 250px;
-  height: 100%;
+  height: 1636px;
   border-radius: 10px;
   background-color: white;
   padding-top: 20px;
@@ -56,7 +56,7 @@
 }
 .line {
   position: absolute;
-  top: 90px; /* adjust based on your layout */
+  top: 140px; /* adjust based on your layout */
   left: 290px; /* offset from sidebar */
   width: 1150px;
   padding: 20px;
@@ -64,7 +64,8 @@
  border-top-left-radius: 10px;   
   border-top-right-radius: 10px; 
   color: white;
-  height: 1200px;
+  height: 1328px;
+  
   
 }
 
@@ -109,6 +110,7 @@ font-size: large;
 color: white;
 text-align: center;
  line-height: 170px;
+ 
 
 
 }
@@ -148,9 +150,9 @@ background-color:  #7758CF;
   left: 290px; 
   width: 1192px;
   background: #bd9292;
-  height: 250px;
+  height: 300px;
   position: absolute;
-  top: 1332px;
+  top: 1499px;
    border-bottom-left-radius: 10px;   
   border-bottom-right-radius: 10px;
 }
