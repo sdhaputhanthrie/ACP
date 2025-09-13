@@ -8,7 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-  height: 227.4vh; /*remove the space right corner*/
+
 }
 .navbar {
   background: #bd9292;
@@ -36,7 +36,7 @@
   border-radius: 10px;
   background-color: white;
   padding-top: 20px;
-  background-color: rgba(255,255,255,0.2); /*add opacity in only sidebar*/
+  background-color: rgba(255,255,255,0.2);
 }
 
 .btn{
@@ -56,8 +56,8 @@
 }
 .line {
   position: absolute;
-  top: 140px; /* adjust based on your layout */
-  left: 290px; /* offset from sidebar */
+  top: 140px; 
+  left: 290px; 
   width: 1150px;
   padding: 20px;
   border: 1px solid white;
