@@ -1,0 +1,33 @@
+.Nav{
+    background-color: #DB8C33;
+    padding: 25px;
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -35px; 
+}
+.content{
+color: white;
+}
+
+.center-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.box{
+    background-color:#E9E6E6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 500px;
+    width: 1200px;
+    margin-top: 50px;
+}
