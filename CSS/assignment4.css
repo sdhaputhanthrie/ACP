@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .Nav {
   background-color: #db8c33;
   padding: 25px;
@@ -9,9 +10,11 @@
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  margin-left: 600px;
   flex-wrap: wrap;
   margin-top: -35px;
+  column-gap: 150px;
+ 
 }
 .content {
   color: white;
@@ -21,12 +24,13 @@
   background-color: #e9e6e6;
   display: grid;
   justify-content: center;
-  grid-template-columns: 350px 350px ;
-  align-items: center;
-  height: 500px;
-  width: 1000px;
+  grid-template-columns: repeat(4, 150px);
+ 
+  height: 300px;
+  width: 800px;
   margin: 50px auto 10px auto;
-  grid-gap: 35px;
+  grid-gap: 25px;
+  padding: 20px;
 }
 
 
@@ -44,6 +48,48 @@
 }
 
 
-.item3{
-  grid-column: 1 / 2; 
+ .first-name { 
+  grid-column-start:1 ;
+  grid-column-end: 3;
+  
+  
 }
+.second-name {
+    grid-column-start:3;
+    grid-column-end: 5;
+      }
+
+.gender { 
+ grid-column-start:1 ;
+ grid-column-end: 2;
+}
+.nic { 
+ grid-column-start:2 ;
+  grid-column-end: 3; 
+}
+.contact { 
+  grid-column-start:3 ;
+  grid-column-end: 4;
+ }
+
+ .email {
+  grid-column-start:1 ;
+  grid-column-end: 2;
+ }
+.address { 
+  grid-column-start:2 ;
+  grid-column-end: 5;
+ }
+ .submit-btn {
+      grid-column-start:3;
+      grid-column-end: 5; 
+      justify-self: end;
+      
+    }
+    button {
+      background: #79c87d;
+      padding: 10px 100px;
+      border-radius: 6px;
+      
+
+    }
