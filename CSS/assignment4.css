@@ -20,26 +20,26 @@
   color: white;
 }
 
-.box {
+.form{
   background-color: #e9e6e6;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(4, 150px);
- 
-  height: 300px;
-  width: 800px;
+  grid-template-columns: repeat(4, 200px);
+  color: #7D8077;
+  height: 400px;
+  width: 1000px;
   margin: 50px auto 10px auto;
-  grid-gap: 25px;
+  grid-gap: 45px;
   padding: 20px;
 }
 
 
-.box label{
+.form label{
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
 }
-.box input{
+.form input{
       width: 100%;
       padding: 8px;
       border: 1px solid #333;
@@ -66,6 +66,7 @@
 .nic { 
  grid-column-start:2 ;
   grid-column-end: 3; 
+
 }
 .contact { 
   grid-column-start:3 ;
@@ -90,6 +91,16 @@
       background: #79c87d;
       padding: 10px 100px;
       border-radius: 6px;
+    }
+    h2{
+      margin-left: 50px;
+    }
+    .box{
+      background: #DB8C33;
+      width: 342px;
+      height: 296px;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
       
-
     }
