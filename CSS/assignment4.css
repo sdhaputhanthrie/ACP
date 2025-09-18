@@ -24,7 +24,7 @@
   background-color: #e9e6e6;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(6, 100px);
   color: #7D8077;
   height: 400px;
   width: 1000px;
@@ -50,40 +50,40 @@
 
  .first-name { 
   grid-column-start:1 ;
-  grid-column-end: 3;
+  grid-column-end: 4;
   
   
 }
 .second-name {
-    grid-column-start:3;
-    grid-column-end: 5;
+    grid-column-start:4;
+    grid-column-end: 7;
       }
 
 .gender { 
  grid-column-start:1 ;
- grid-column-end: 2;
+ grid-column-end: 3;
 }
 .nic { 
- grid-column-start:2 ;
-  grid-column-end: 3; 
+ grid-column-start:3 ;
+  grid-column-end: 5; 
 
 }
 .contact { 
-  grid-column-start:3 ;
-  grid-column-end: 4;
+  grid-column-start:5 ;
+  grid-column-end: 7;
  }
 
  .email {
   grid-column-start:1 ;
-  grid-column-end: 2;
+  grid-column-end: 3;
  }
 .address { 
-  grid-column-start:2 ;
-  grid-column-end: 5;
+  grid-column-start:3 ;
+  grid-column-end: 7;
  }
  .submit-btn {
-      grid-column-start:3;
-      grid-column-end: 5; 
+      grid-column-start:5;
+      grid-column-end: 7; 
       justify-self: end;
       
     }
