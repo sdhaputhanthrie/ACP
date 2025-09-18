@@ -6,14 +6,15 @@
 .Nav {
   background-color: #db8c33;
   padding: 25px;
+
 }
 
 .flex {
-  display: flex;
-  margin-left: 600px;
+  display: flex; 
   flex-wrap: wrap;
-  margin-top: -35px;
   column-gap: 150px;
+  margin-left: 500px;
+  margin-top: -35px;
  
 }
 .content {
@@ -24,7 +25,7 @@
   background-color: #e9e6e6;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(6, 100px);
+  grid-template-columns: repeat(6, auto);
   color: #7D8077;
   height: 400px;
   width: 1000px;
@@ -96,11 +97,16 @@
       margin-left: 50px;
     }
     .box{
-      background: #DB8C33;
-      width: 342px;
-      height: 296px;
-      border-radius: 10px;
+     gap: 50px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       
+    }
+    .box1{
+      
+      background: #DB8C33;
+      width: 342px;
+      height: 296px;       
+      border-radius: 10px;
     }
