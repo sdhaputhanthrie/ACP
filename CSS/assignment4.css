@@ -6,6 +6,8 @@
 .Nav {
   background-color: #db8c33;
   padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .flex {
@@ -13,7 +15,7 @@
   flex-wrap: wrap;
   column-gap: 150px;
   margin-left: 500px;
-  margin-top: -35px;
+ justify-content: center;
   font-family: 'Inter', sans-serif;
 }
 .content {
