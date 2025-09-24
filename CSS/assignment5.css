@@ -13,7 +13,7 @@ img {
     display: block;
 }
 
-/* Default (desktop-first) */
+
 .img1 {
     height: 60vh;
     object-fit: cover;
@@ -21,16 +21,19 @@ img {
 
 .img2 {
     height: 55vh;
-    bottom: 297px;   /* push city a little down */
+    bottom: 297px;   
     object-fit: cover;
     position: absolute;
+    
 }
 
 .img3 {
     height: 45vh;
     margin-top: -10px;
     object-fit: cover;
+    position: absolute;
 }
+
 
 
 @media (max-width: 600px) {
