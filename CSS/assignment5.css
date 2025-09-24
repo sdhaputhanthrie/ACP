@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
 img {
     width: 100%;
     display: block;
@@ -29,8 +25,14 @@ img {
 
 .img3 {
     height: 45vh;
-    margin-top: -10px;
-    object-fit: cover;
+    bottom: 0;
+    
+    position: absolute;
+}
+
+.img4{
+    height: 200px;
+    width: 400px;
     position: absolute;
 }
 
@@ -38,15 +40,16 @@ img {
 
 @media (max-width: 600px) {
     .img1 {
-        height: auto;  
+        height: 396px;  
     }
     .img2 {
-        height: 40vh;  
-        bottom: 467px;
+        height: 40vh; 
+        top:108px; 
+     
       
     }
     .img3 {
-        height: 35vh;  
+        height: 45vh;  
         
        
     }
@@ -64,7 +67,7 @@ img {
     }
     .img3 {
         height: 51vh;
-        bottom: 500px;
+        bottom: 0px;
     }
 }
 
