@@ -9,7 +9,6 @@ img {
     display: block;
 }
 
-
 .img1 {
     height: 60vh;
     object-fit: cover;
@@ -17,26 +16,43 @@ img {
 
 .img2 {
     height: 55vh;
-    bottom: 297px;   
+    bottom: 297px;  
     object-fit: cover;
     position: absolute;
-    
 }
 
 .img3 {
     height: 45vh;
     bottom: 0;
-    
     position: absolute;
 }
 
-.img4{
+.img4 {
     height: 200px;
     width: 400px;
     position: absolute;
+    bottom: 80px;
+    left: 35%;
+    
+    
 }
 
+.img5 {
+    position: absolute;
+    height: 75px;
+    width: 74px;
+    bottom: 98px; 
+    left: 37.4%; 
+}
 
+.img6 {
+    position: absolute;
+    height: 75px;
+    width: 74px;
+    bottom: 98px; 
+    right: 39.7%; 
+
+}
 
 @media (max-width: 600px) {
     .img1 {
@@ -44,17 +60,12 @@ img {
     }
     .img2 {
         height: 40vh; 
-        top:108px; 
-     
-      
+        top: 108px; 
     }
     .img3 {
         height: 45vh;  
-        
-       
     }
 }
-
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .img1 {
@@ -63,14 +74,12 @@ img {
     .img2 {
         height: 50vh;
         bottom: 364px;
-        
     }
     .img3 {
         height: 51vh;
         bottom: 0px;
     }
 }
-
 
 @media (min-width: 1025px) {
     .img1 {
