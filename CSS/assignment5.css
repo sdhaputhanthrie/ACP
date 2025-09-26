@@ -54,7 +54,7 @@ img {
 
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .img1 {
         height: 396px;  
     }
@@ -67,7 +67,7 @@ img {
     }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
     .img1 {
         height: 50vh;
     }
@@ -81,7 +81,7 @@ img {
     }
 }
 
-@media (min-width: 1025px) {
+@media only screen and(min-width: 1025px) {
     .img1 {
         height: 60vh;
     }
