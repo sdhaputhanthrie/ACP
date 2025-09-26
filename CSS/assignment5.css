@@ -22,9 +22,15 @@ img {
 }
 
 .img3 {
-    height: 45vh;
-    bottom: 0;
     position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45vh;
+      background:"./asset/road.jpg" repeat-x;
+      background-size: cover;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
 }
 
 .img4 {
@@ -33,8 +39,8 @@ img {
     position: absolute;
     bottom: 80px;
     left: 35%;
-    
-    
+   
+   
 }
 
 .img5 {
@@ -43,6 +49,10 @@ img {
     width: 74px;
     bottom: 98px; 
     left: 37.4%; 
+    animation-name: wheel;
+    animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
 }
 
 .img6 {
@@ -50,9 +60,14 @@ img {
     height: 75px;
     width: 74px;
     bottom: 98px; 
-    right: 39.7%; 
+    right: 39.7%;
+    animation-name: wheel;
+    animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear; 
 
 }
+
 
 @media only screen and (max-width: 600px) {
     .img1 {
@@ -64,6 +79,15 @@ img {
     }
     .img3 {
         height: 45vh;  
+    }
+    .img4{
+        left: 10%;
+    }
+    .img5{
+        left:17.5% ;
+    }
+    .img6{
+        right: 12%;
     }
 }
 
@@ -79,6 +103,13 @@ img {
         height: 51vh;
         bottom: 0px;
     }
+    .img4{
+        left:30%;
+    }
+    .img5{
+        left:34.8%;
+
+    }
 }
 
 @media only screen and(min-width: 1025px) {
@@ -92,5 +123,24 @@ img {
     .img3 {
         height: 45vh;
         margin-top: -10px;
+    }
+    
+}
+
+
+@keyframes wheel {
+     from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(100deg);
+        } 
+}
+@keyframes road {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -1000px; /* adjust speed by changing value */
     }
 }
