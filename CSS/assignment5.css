@@ -89,13 +89,13 @@ img {
         height: 45vh;  
     }
     .img4{
-        left: 10%;
+        left: 6%;
     }
     .img5{
-        left:17.5% ;
+        left:13.5% ;
     }
     .img6{
-        right: 12%;
+        right: 16%;
     }
 }
 
@@ -118,6 +118,9 @@ img {
         left:34.8%;
 
     }
+    .img6{
+        right: 19.3%;
+    }
 }
 
 @media only screen and(min-width: 1025px) {
@@ -132,7 +135,13 @@ img {
         height: 45vh;
         margin-top: -10px;
     }
-    
+    .img5{
+        left:20.8%;
+
+    }
+    .img6{
+        right: 15%;
+    }
 }
 
 
