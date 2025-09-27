@@ -24,9 +24,22 @@ img {
     animation-name: road;
     animation-duration: 3s;
     background-repeat: repeat-x;
+   
 
 }
-
+.img3{
+   height: 38vh;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    background: url("./asset/road.jpg") repeat-x;
+    background-size: cover;
+   animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: road;
+    animation-duration: 3s;
+}
+/*  
 .img3 {
     position: absolute;
       bottom: -1;
@@ -40,6 +53,7 @@ img {
     animation-duration: 3s;
     background-repeat: repeat-x;
 }
+    */
 
 .img4 {
     height: 200px;
