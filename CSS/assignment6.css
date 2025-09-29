@@ -7,15 +7,11 @@
 .container {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    background-image: url("../asset/box.png"), url("../asset/pxfuel.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover; 
+    background-position: left center, right center; 
 }
 
-.background {
-    width: 60vw;
-    height: 100vh;
-    background-image: url("../asset/pxfuel.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right center;
-    float: right;
-}
+
+
