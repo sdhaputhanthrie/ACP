@@ -11,6 +11,7 @@
     background-repeat: no-repeat, no-repeat;
     background-size: contain, cover; 
     background-position: left center, right center; 
+   
 }
 
 
@@ -19,6 +20,26 @@
         background-image: url("../asset/pxfuel.png");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: ri;
+        background-position: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        display: block;
+        height: 70px;
+        top: 8% ;
+        position: fixed;
+        left: 40%;
+    }
+    
+    h3{
+        color: white;
+        top: 22% ;
+        position: fixed;
+        left: 30%;
+        font-family: 'Inter', sans-serif;
+        font-weight:5;
     }
 }
