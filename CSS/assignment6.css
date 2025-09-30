@@ -11,40 +11,38 @@
     background-repeat: no-repeat, no-repeat;
     background-size: contain, cover; 
     background-position: left center, right center; 
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
 }
 
 
-@media only screen and (max-width: 400px) {
-    .container {
-        background-image: url("../asset/pxfuel.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@media only screen and (min-width: 401px) {
+    .center-content {
+        display: none;
     }
+}
 
-    img{
-        display: block;
-        height: 70px;
-        top: 8% ;
-        position: fixed;
-        left: 40%;
-    }
-    
-    h3{
-        color: white;
-        top: 22% ;
-        position: fixed;
-        left: 30%;
-        font-family: 'Inter', sans-serif;
-        font-weight:5;
-    }
-  .input{
-    position: relative;
-  }  
+img {
+    display: block;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
 
 .username {
     width: 300px;
@@ -54,13 +52,43 @@
     padding: 10px;
     font-size: 16px;
     background: rgba(255, 255, 255, 0.4);
-    position: relative;
-    bottom: 50px;
-    
-   
-}
-.username::placeholder {
-  color: rgba(255, 255, 255, 0.7); 
+    color: #fff;
+    margin-bottom: 20px;
 }
 
+.username::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        background-image: url("../asset/pxfuel.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .center-content {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    img {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .username {
+        width: 90vw;
+        max-width: 300px;
+        height: 45px;
+        font-size: 15px;
+    }
 }
