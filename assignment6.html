@@ -13,29 +13,39 @@
     <div class="center-content">
       <img src="./asset/logo.png" alt="leaf">
       <h3>Welcome back </h3>
-      <input type="text" class="username" placeholder="username">
+
+      
       <div class="input-group">
-        <input type="text" class="password" placeholder="password">
+        <input type="text" class="username" required>
+        <label for="username">Username</label>
+      </div>
+
+      
+      <div class="input-group">
+        <input type="password"  class="password" required>
+        <label for="password">Password</label>
         <i class="fa-regular fa-eye"></i>
       </div>
 
       <div class="signin">
         <div class="checkbox">
-          <input type="checkbox" id="remember" />
+          <input type="checkbox" />
           <label for="remember">Remember me</label>
         </div>
-        <label for="type" class="Forgot">Forgot Password</label>
+        <label for="type" class="forgot">Forgot Password</label>
       </div>
 
-
       <button class="btn">Sign In</button>
+
       <div class="divider">
         <span>Or</span>
       </div>
-        <img src="./asset/google.png" alt="google" class="google">   
-        <label for="text" class="signup">Don’t have an account? Sign Up</label>
-    </div>
-    <script src="https://kit.fontawesome.com/7d3060ff55.js" crossorigin="anonymous"></script>
-</body>
 
+      <img src="./asset/google.png" alt="google" class="google">   
+      <label for="text" class="signup">Don’t have an account? Sign Up</label>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/7d3060ff55.js" crossorigin="anonymous"></script>
+</body>
 </html>
