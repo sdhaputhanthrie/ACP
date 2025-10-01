@@ -127,7 +127,7 @@ h3 {
     height: 45px;
     font-size: 15px;
   }
-  .options-row {
+  .signin{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,6 +190,12 @@ h3 {
   margin-right: 8px;
   position: relative;
   top: -50px;
+}
+.signup{
+  color: white;
+  margin-top: -40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
 }
 
 }
