@@ -15,15 +15,29 @@
   flex-direction: column;
   align-items: center;
 }
-.box{
+ .box{
  width: 40vw;
- height: 100vh;
+ height: 120vh;
  background-color:white;
  background-position: relative ;
- margin-left: -900px;
+ margin-left: -800px;
  border-radius: 0 30px 30px 0;
  
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  width: 100%;
+}
 
+.center img {
+  display: block;
+  height: 70px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  
 }
 .center-content {
   display: flex;
@@ -166,10 +180,78 @@ h3 {
   font-size: 13px;
 }
 
-@media only screen and (min-width: 401px) {
-  .center-content {
-    display: none;
+@media only screen and (min-width: 600px) {
+  .box{
+ width: 40vw;
+ height: 100vh;
+ background-color:blue;
+ background-position: relative ;
+ margin-left: -900px;
+ border-radius: 0 30px 30px 0;
+ 
+}
+.input-group{
+  background: lightgray ;
+  border: none;
+  border-radius: 10px;
+  border-color: none;
+  border: 1px;
+}
+.input-group label {
+  color: gray;
+}
+.fa-regular.fa-eye {
+  color: gray;
+}
+.signup {
+  color: gray;
+}
+.or::before,
+.or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: gray; 
+}
+
+.or span {
+  color: gray; 
+}
+
+.signup{
+ color: gray;
+    margin-top: 60px;   
+    margin-bottom: -30px; 
+}
+.center-content{
+  margin-top:-700px ;
+  margin-bottom: 10px;
+}
+.center-content img {
+  display: none;
+  
+}
+.center-content {
+    display: flex;
+    top: 150px;
+    position: relative;
+    margin-right: 910px;
   }
+  h3{
+    color: #FF451C;
+;
+  }
+  .logo {
+  width: 300px;
+  height: 50px;
+  margin-right: 8px;
+  position: relative;
+  top: 370px;
+  border-color: gray;
+  color: gray;
+}
+
+  
 }
 
 @media only screen and (max-width: 400px) {
