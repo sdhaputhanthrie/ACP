@@ -8,8 +8,8 @@
   width: 100vw;
   height: 100vh;
   background-image:  url("../asset/pxfuel.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
+  background-repeat:  no-repeat;
+ background-size: 65vw;
   background-position:  right center;
   display: flex;
   flex-direction: column;
