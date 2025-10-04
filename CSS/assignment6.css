@@ -7,15 +7,17 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url("../asset/box.png"), url("../asset/pxfuel.png");
+  background-image:  url("../asset/pxfuel.png");
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
-  background-position: left center, right center;
+  background-position:  right center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.box{
+ 
+}
 .center-content {
   display: flex;
   flex-direction: column;
@@ -63,7 +65,6 @@ h3 {
   color: #fff;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
-  pointer-events: none;
   transition: 0.3s ease-in;
 }
 
@@ -120,15 +121,15 @@ h3 {
   font-size: 14px;
 }
 
-.divider {
+.or {
   display: flex;
   align-items: center;
   width: 320px;
   margin: 30px 0;
 }
 
-.divider::before,
-.divider::after {
+.or::before,
+.or::after {
   content: "";
   flex: 1;
   height: 1px;
@@ -136,7 +137,7 @@ h3 {
   opacity: 0.5;
 }
 
-.divider span {
+.or span {
   color: #fff;
   padding: 0 12px;
   font-size: 10px;
@@ -170,7 +171,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    justify-content: flex-start;
     align-items: center;
     position: absolute;
     transition:  transform 0.4s ease-in-out; 
