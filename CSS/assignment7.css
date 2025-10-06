@@ -4,8 +4,8 @@
 }
 
 .header{
-    position: sticky;
-    background-color:lightcyan;
+  position: sticky;
+  background-color:white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,3 +26,39 @@
   font-size: 14px;
   color: #5c5c77;
 }
+
+.nav{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+.acpt{
+  margin-left: 70px;
+  margin-top: 10px;
+}
+.logo{
+  width: 50%;
+  height: 100%;
+  background-color: #1a1a37;
+}
+.navbar{
+  width: 50%;
+  height: 100%;
+  background-color:  #21b674 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.navbar a{
+  color:white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
