@@ -1,68 +1,123 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+   * {
+      margin: 0;
+      padding: 0;
+    }
 
-.header{
-  position: sticky;
-  background-color:white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 40px;
-  border-bottom: 1px solid #e0e0e0;
-}
-.left span {
-  font-size: 14px;
-  color: #5c5c77;
-  margin-left: 160px;
-}
-.center a {
-  color: #5c5c77;
-  margin: 0 8px;
-  font-size: 14px;  
-}
-.right label {
-  font-size: 14px;
-  color: #5c5c77;
-}
+    body{
+      height: 100%;
+      position: relative;
+      font-family: "Poppins", sans-serif;
+    }
 
-.nav{
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100px;
-}
-.acpt{
-  margin-left: 70px;
-  margin-top: 10px;
-}
-.logo{
-  width: 50%;
-  height: 100%;
-  background-color: #1a1a37;
-}
-.navbar{
-  width: 50%;
-  height: 100%;
-  background-color:  #21b674 ;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.navbar ul{
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-.navbar a{
-  color:white;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-.navbar a:hover,
-.navbar a.home {
-  border-bottom: 3px solid white;
-  padding-bottom: 4px;
-}
+    
+    .header {
+      position: relative;
+      z-index: 2;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .left span {
+      font-size: 14px;
+      color: #5c5c77;
+      margin-left: 160px;
+    }
+
+    .center a {
+      color: #5c5c77;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    .right label {
+      font-size: 14px;
+      color: #5c5c77;
+    }
+
+   
+    .nav {
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      z-index: 2;
+      transition: all 0.4s ease;
+    }
+
+    .logo {
+      width: 50%;
+      height: 100%;
+      background-color: #1a1a37;
+      display: flex;
+      align-items: center;
+    }
+
+    .acpt {
+      margin-left: 70px;
+      width: 120px;
+    }
+
+    .navbar {
+      width: 50%;
+      height: 100%;
+      background-color: #21b674;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .navbar a:hover,
+    .navbar a.home {
+      border-bottom: 3px solid white;
+      padding-bottom: 4px;
+    }
+
+    
+    .background {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .box {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: black;
+      position: absolute;
+      opacity: 0.6;
+      z-index: 1;
+    }
+
+    
+    
