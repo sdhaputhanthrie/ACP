@@ -61,4 +61,8 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
-
+.navbar a:hover,
+.navbar a.home {
+  border-bottom: 3px solid white;
+  padding-bottom: 4px;
+}
