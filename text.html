@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Chart</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Half-Visible Navbar (CSS Only)</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      background: #0d1b3d;
+      height: 200vh; /* to make scrollable */
+      font-family: "Poppins", sans-serif;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 50%;       /* only half-width */
+      height: 100px;
+      transform: translateY(-50%); /* show only 50% */
+      background: linear-gradient(to right, #1a1a37 50%, #21b674 50%);
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
+      justify-content: center;
+      transition: transform 0.5s ease;
+      z-index: 10;
     }
 
-    .container {
-      position: relative;
-      width: 500px;
-      height: 300px;
+    /* When scrolled near top (using :root scroll-timeline effect for CSS only) */
+    @supports (animation-timeline: scroll()) {
+      @scroll-timeline scroll-nav {
+        source: auto;
+        orientation: block;
+      }
+
+      .nav {
+        animation: slideDown both linear;
+        animation-timeline: scroll-nav;
+        animation-range: entry 0% cover 30%;
+      }
+
+      @keyframes slideDown {
+        from { transform: translateY(-50%); }
+        to   { transform: translateY(0%); }
+      }
     }
 
-    .box {
-      position: absolute;
-      width: 120px;
-      height: 120px;
-      border-radius: 10px;
+    /* fallback hover effect if browser doesn’t support scroll-timeline */
+    .nav:hover {
+      transform: translateY(0%);
+    }
+
+    .nav span {
       color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-weight: bold;
-    }
-    
-
-    .box1 {
-      background: #8a6de9; /* Purple */
-      top: 30px;
-      left: 40px;
-    }
-
-    .box2 {
-      background: #e68c87; /* Pink */
-      top: 90px;
-      left: 120px;
-    }
-
-    .box3 {
-      background: #d6a23d; /* Yellow */
-      top: 150px;
-      left: 200px;
-    }
-
-    .box4 {
-      background: #5fc89a; /* Green */
-      top: 90px;
-      left: 280px;
-    }
-
-    .box5 {
-      background: #a582e6; /* Purple */
-      top: 30px;
-      left: 360px;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="box box1">Course 01</div>
-    <div class="box box2">Course 02</div>
-    <div class="box box3">Course 03</div>
-    <div class="box box4">Course 04</div>
-    <div class="box box5">Course 05</div>
+  <div class="nav">
+    <span>ACPT NAVBAR</span>
+  </div>
+
+  <div style="margin-top:150vh; text-align:center;">
+    <h2>Scroll down and up to see the navbar animation.</h2>
   </div>
 </body>
 </html>
