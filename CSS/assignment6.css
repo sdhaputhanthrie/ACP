@@ -182,7 +182,7 @@ h3 {
   font-size: 13px;
 }
 
-@media only screen and (min-width: 401px) and (max-width: 1024px){
+@media only screen and (min-width:600px){
   .box{
  width: 40vw;
  height: 100vh;
