@@ -124,14 +124,51 @@
       position: relative;
     }
     .vision{
-      width: 57.3%;
+      width: 792.4px;
       height: 858px;
       background-color: black;
       position: absolute;
       margin-left: 590px;
      top: 800px;
+      display: flex;
+    flex-wrap: wrap;
     }
-    .box1{
-      
+    .v-box1{
+        width: 345px;
+        height: 400px;
+        background-color: blue;
+        position: absolute;
+        margin-top: 50px;
     }
+    /*.fa-solid.fa-briefcase{
+      width: 100px;
+      height: 100px;
+      color: white;
+      margin-left: 10px;
+      margin-top: 50px;
+    }*/
+    .v-box2{
+        width: 345px;
+        height: 400px;
+        background-color: rgb(0, 255, 162);
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 346px;
+    }
+    .v-box3{
+        width: 345px;
+        height: 400px;
+        background-color: #ff002f;
+        position: absolute;
+        margin-top: 449px;
+        margin-left: 346px;
+    }
+    .v-box4{
+        width: 345px;
+        height: 400px;
+        background-color: rgb(255, 0, 200);
+        position: absolute;
+        margin-top: 449px;
+    }
+    
     
