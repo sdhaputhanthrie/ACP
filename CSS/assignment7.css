@@ -115,7 +115,7 @@ body {
 .vision {
   width: 792.4px;
   height: 858px;
-  background-color: black;
+  background-color: white;
   position: absolute;
   margin-left: 590px;
   top: 800px;
@@ -123,9 +123,9 @@ body {
   flex-wrap: wrap;
 }
 .v-box1 {
-  width: 345px;
+  width: 330px;
   height: 400px;
-  background-color: blue;
+  background-color: white;
   position: absolute;
   margin-top: 50px;
 }
@@ -136,12 +136,12 @@ body {
   margin: 50px auto 0 auto;
 }
 .v-box2 {
-  width: 345px;
+  width: 330px;
   height: 400px;
-  background-color: rgb(0, 255, 162);
+  background-color: white;
   position: absolute;
   margin-top: 50px;
-  margin-left: 346px;
+  margin-left: 331px;
 }
 .fa-solid.fa-display{
   font-size: 50px;
@@ -150,12 +150,12 @@ body {
   margin: 50px auto 0 auto;
 }
 .v-box3 {
-  width: 345px;
+  width: 330px;
   height: 400px;
-  background-color: #ff002f;
+  background-color:white;
   position: absolute;
   margin-top: 449px;
-  margin-left: 346px;
+  margin-left: 331px;
 }
 .fa-solid.fa-user{
   font-size: 50px;
@@ -164,9 +164,9 @@ body {
   margin: 50px auto 0 auto;
 }
 .v-box4 {
-  width: 345px;
+  width: 330px;
   height: 400px;
-  background-color: rgb(255, 0, 200);
+  background-color: white;
   position: absolute;
   margin-top: 449px;
 }
@@ -175,4 +175,15 @@ body {
   color: #21b674;
   display: block;
   margin: 50px auto 0 auto;
+}
+h1{
+  color:#1a1a37;
+  text-align: center;
+  margin-top: 10px;
+}
+p{
+  color: gray;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
 }
