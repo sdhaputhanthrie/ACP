@@ -186,4 +186,53 @@ p{
   text-align: center;
   margin-top: 20px;
   padding: 10px;
+  text-align: center;
+}
+.about-section{
+  width:1390px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 890px;
+  right: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about{
+   width: 650px;
+   height: 500px;
+   position: absolute;
+   background-color: white;
+   margin-left: 120px;
+   
+}
+h2{
+  margin-top: 30px;
+  font-weight: 700px;
+  font-size: 40px;
+  margin-left: 10px;
+  
+}
+.about p{
+  text-align: justify;
+}
+.about_ACPT{
+  width: 500px;
+  height: 300px;
+  left: 800px;
+  position: relative;
+  top: 70px;
+}
+.btn2{
+  color:  #47c28e;
+  width: 150px;
+  height:50px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-color:#47c28e;
+  position: relative;
+  margin-top: 450px;
+  right: 370px;  
 }
