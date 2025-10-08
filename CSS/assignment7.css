@@ -124,7 +124,14 @@
       position: relative;
     }
     .vision{
+      width: 57.3%;
+      height: 858px;
+      background-color: black;
+      position: absolute;
+      margin-left: 590px;
+     top: 800px;
+    }
+    .box1{
       
     }
-    
     
