@@ -268,6 +268,7 @@ h2 {
   position: relative;
   margin-top: 10px;
   margin: 30px;
+  
 }
 .box1{
   margin-left: -500px;
@@ -377,6 +378,46 @@ h3{
   position: relative;
 }
 
+
+.storie{
+  position: relative;
+}
+.staff{
+  margin-left: -900px;
+  width: 1692px;
+  height: 500px;
+}
+.success{
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  position: absolute;
+  margin-top: -450px;
+  margin-left: 200px;
+}
+.h2{
+  text-align: center;
+  color: #1a1a37;
+}
+.p3{
+  text-align: justify;
+}
+.btn6{
+   border-radius: 100px;
+   width: 70px;
+   height: 70px;
+   background-color:#47c28e;
+   position: absolute;
+   top: 200px;
+  left: -400px;
+}
+.fa-solid.fa-play{
+  color: white;
+  position: absolute;
+  left: 22px;
+  top: 24px;
+  font-size: 20px;
+}
 
 
 
