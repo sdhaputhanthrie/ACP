@@ -346,7 +346,7 @@ h3{
 
   .training .p1 {
   position: absolute;
-  top: 420px !important;    /* distance from the bottom of the box */
+  top: 440px !important;    /* distance from the bottom of the box */
   left: 15px;
   right: 15px;
   padding: 6px 12px;
@@ -354,13 +354,13 @@ h3{
   color: black;
 }
 .btn4{
-  top: 510px;
+  top: 520px;
   left:25px ;
   padding: 6px 12px;
   position: absolute;
 }
 .label{
- top: 510px;
+ top: 520px;
   right:15px ;
   padding: 6px 12px;
   position: absolute;
