@@ -285,9 +285,9 @@ h2 {
   padding-bottom: 8px;
 }
 .training {
-  width: 350px;
-  height: 400px;
-  background-color: white;
+  width: 400px;
+  height: 600px;
+  background-color: rgb(138, 20, 20);
   border: 1px solid #ddd;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   display: flex;
@@ -299,8 +299,16 @@ h2 {
 .box1{
   margin-left: -590px; 
 }
+.img{
+  width: 100%;
+  height: 30%;
+  margin-top: -420px;
+  position: relative;
+  overflow: hidden;
+}
 .box4 {
-  margin-left:-200px;
+  margin-left:-437px;
   display: flex;
   margin-top: 0px;
+  
 }
