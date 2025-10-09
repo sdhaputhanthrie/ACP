@@ -547,4 +547,53 @@ color: white;
 }
 
 
+.footer{
+  height: 270px;
+  width:1402px ;
+  background-color:#1a1a37;
+  margin-left: -590px;
+  margin-bottom: 0px;
+}
+.acpt2{
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.data{
+  list-style: none;
+  color: gray;
+  margin-left: 70px;
+}
+.company{
+  list-style: none;
+  color: gray;
+  margin-left: 500px;
+  margin-top: -150px;
+}
+.f-label{
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+.links{
+  list-style: none;
+  color: gray;
+  margin-left: 750px;
+  margin-top: -80px;
+}
+.f-label2{
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+.copyright{
+  color: gray;
+  margin-top: 110px;
+  margin-left: 150px;
 
+}
+.footer a{
+  color:#47c28e;
+  margin: 0 8px;
+  font-size: 14px;
+  
+}
