@@ -227,6 +227,13 @@ h2 {
   position: relative;
   background: transparent;
 }
+.btn:hover{
+    background-color:#47c28e;
+    width: 100px;
+    height: 34px;
+    cursor: pointer;
+    color: white;
+}
 .btn2 {
   margin-top: 450px;
   right: 370px;
@@ -269,8 +276,9 @@ h2 {
   position: relative;
   margin-top: 10px;
   margin: 30px; 
-   box-shadow: 1px 5px 13px -3px rgb(0, 0,0);
+   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
+
 .training:hover{
     transform: scale(1.1);
     transition: 0.3s ease-in-out;
@@ -455,7 +463,12 @@ h3{
   position: relative;
   margin-top: 10px;
   margin: 30px;
-  border: 1px solid hsl(0, 69%, 54%) ;
+  border: 1px solid white ;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+.event:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 .event1{
   margin-left: -500px;
@@ -512,7 +525,12 @@ h3{
   position: relative;
   margin-top: 180px;
   margin: 30px;
-  border: 1px solid hsl(0, 69%, 54%) ;
+  border: 1px solid white ;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+.news:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 .news1{
   margin-left: -500px;
