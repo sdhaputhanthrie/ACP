@@ -15,19 +15,32 @@ body {
   align-items: center;
   padding: 10px 40px;
 }
+.header:hover{
+  color: #21b674;
+}
 .left span {
   font-size: 14px;
   color: #5c5c77;
   margin-left: 160px;
 }
+.left span:hover{
+  color: #21b674;
+}
+
 .center a {
   color: #5c5c77;
   margin: 0 8px;
   font-size: 14px;
 }
+.center a:hover{
+  color: #21b674;
+}
 .right label {
   font-size: 14px;
   color: #5c5c77;
+}
+.right label:hover{
+  color: #21b674;
 }
 
 .nav {
