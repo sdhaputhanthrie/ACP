@@ -24,9 +24,15 @@ h3{
     width: 150px;
     height: 150px;
     border-radius: 100px;
-    display: block;      /* makes margin auto work */
+    display: block;    
     margin: 30px auto; 
+}
 
+.form-control{
+    width: 250px;
+    margin-left: 70px;
+    border: 1px solid #5EB562;
+    
 }
 
 
