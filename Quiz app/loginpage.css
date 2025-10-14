@@ -8,5 +8,25 @@
     height: 35px;
 }
 .container-fluid{
-background-color:#5EB562 ; 
+background-color:#5EB562 ;
+ 
 }
+
+.card{
+    background-color:#dff0e0;      
+}
+
+h3{
+    color: #5EB562;
+}
+
+.login{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    display: block;      /* makes margin auto work */
+    margin: 30px auto; 
+
+}
+
+
