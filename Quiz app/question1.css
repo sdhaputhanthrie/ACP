@@ -20,3 +20,20 @@ margin-bottom: 1320px;
   background-position: center;
   opacity: 0.4;
 }
+
+.card {
+  position: absolute;
+  top: 30%;              
+  left: 50%;            
+  transform: translate(-50%, -30%); 
+  padding: 20px;
+  width: 500px;
+}
+
+h2{
+position: absolute;
+  top: 150px;       
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
