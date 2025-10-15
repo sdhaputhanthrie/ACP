@@ -16,13 +16,16 @@
   </div>
 </nav>
 
-<div class="card mt-5  top-0 start-50  position-absolute" style="max-width: 26rem;">
+<div class="d-flex align-items-center justify-content-center " style="height: 85vh">
+  <div class="log-card card px-5 p-2 border-0" style="background-color: #5eb56233">
   <h3 class="text-center mt-3">Login</h3>
   <img src="../asset/login.png" alt="login" class="login">
-  <input type="text" class="form-control mt-4 mb-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"placeholder="Name">
+  <div class="input-group my-4">
+  <input id="username" type="text" class="form-control mt-4 mb-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"placeholder="Name" >
+  </div>
   <button onclick="submit()" type="button" class="btn btn-md mx-auto  mt-5 mb-5">Start</button>
 </div>
- 
 </div>
+<script src="./index.js"></script>
 </body>
 </html>
