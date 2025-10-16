@@ -7,59 +7,74 @@ function submit(){
 
 const name = localStorage.getItem("studentName");
 if(name){
-    document.getElementById("display").innerText = name;
+    document.getElementById("display").innerText =  name;
 }
 
-// Quiz data
 const questions = [
-    "What method adds an element to the end of an array?",
-    "How do you get the number of elements in an array?",  
+  {
+    question: "Which of the following is a JavaScript data type?",
+    options: ["String", "Integer", "Float", "Character", "All of the above"],
+    correct: "String"
+  },
+  {
+    question: "Which method is used to print content in the console?",
+    options: ["print()", "console.log()", "display()", "write()", "log.print()"],
+    correct: "console.log()"
+  }
 ];
 
-const options = [
-    ["push", "pop", "shift", "unshift", "concat"],
-    ["size", "length", "count", "total", "indexOf"],
-];
+let currentQuestion = 0;
+let timer;
+let time= 60;
 
-const answers = ["push", "length"];
+function  displayQuestion(){
+    const quiz = questions[currentQuestion];
+    document.getElementById("question").innerText = quiz.question;
+    document.querySelector(".index").innerText = currentQuestion + 1;
+    
+    let option = document.getElementById("options");
+    option.innerHTML = "";
 
-let current = 0;
-let score = 0;
-
-function showQuestion(){
-    document.getElementById('question').innerText = questions[current];
-
-    const optionsDiv = document.getElementById('options');
-    optionsDiv.innerHTML = "";
-
-    const currentOptions = options[current]; 
-    for (let i = 0; i < currentOptions.length; i++) {
-        const opt = currentOptions[i]; 
-        const label = document.createElement("label");
-        label.className = "option-label d-block mb-2";
-        label.innerHTML = `<input type="radio" name="answer" value="${opt}"> ${opt}`;
-        optionsDiv.appendChild(label);
-    }
+    for (let i = 0; i < quiz.options.length; i++) {
+    option.innerHTML += `
+      <div>
+        <input type="radio" name="ans" value="${quiz.options[i]}">
+        ${quiz.options[i]}
+      </div>
+    `;
+  }
+startCount(); 
 }
 
-// Show first question immediately
-showQuestion();
+function startCount(){
+   clearInterval(timer);
+  time = 60;
+  const timerBox = document.getElementById("timer");
+   updateTimerDisplay(timerBox); 
 
-function submitAnswer(){
-    const selected = document.querySelector('input[name="answer"]:checked');
-    if(!selected){
-        alert("Please select an answer!");
-        return;
-    }
+  timer = setInterval(() => {
+    time--;
+    updateTimerDisplay(timerBox);
 
-    if(selected.value === answers[current]){
-        score++;
+    if (time <= 0) {
+      clearInterval(timer);
+      nextPage();
     }
-
-    current++;
-    if(current < questions.length){
-        showQuestion();
-    } else {
-        alert("Quiz finished! Your score: " + score + "/" + questions.length);
-    }
+  }, 1000);
 }
+
+function updateTimerDisplay(timerBox) {
+  let minutes = Math.floor(time / 60);
+  let seconds = time % 60;
+  
+  let display = 
+    (minutes < 10 ? "0" + minutes : minutes) + ":" + 
+    (seconds < 10 ? "0" + seconds : seconds);
+
+  timerBox.innerText = display;
+}
+
+window.onload = displayQuestion;
+
+
+
