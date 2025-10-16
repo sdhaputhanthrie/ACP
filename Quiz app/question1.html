@@ -13,16 +13,24 @@
       <div class="">
         <img src="../asset/Q&A.png" alt="" class="icon"/>
       </div>
-  <div><h4 id="display"></h4></div>
+  <div><h4 id="display" style="color: black;"></h4></div>
 </nav>
 
-<h2>Question 1/5</h2>
+<div class="d-flex justify-content-center align-items-center mb-2">
+  <div class="question">
+    Questions <span class="index" >1</span>/<span>5</span>
+  </div>
+</div>
+
 <div class="card text-center w-90 h-50 top-50">
-   
-    <form id="quizForm">
+    <h4 id="question"></h4>
+    <div id="timer" class="mb-5 fw-bold mt-2"></div>
+    <form id="Form">
       <div id="options"></div>
       <button type="button" class="btn btn-primary mt-2" onclick="submitAnswer()">Submit</button>
     </form>
-<link rel="stylesheet" href="./index.js">
+
+   <script src="./index.js"></script>
+
 </body>
 </html>

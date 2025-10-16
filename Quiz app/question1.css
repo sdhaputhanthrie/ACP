@@ -6,6 +6,7 @@
 .icon{
     width: 35px;
     height: 35px;
+    margin-top: 7px;
    
 }
 .container-fluid{
@@ -50,4 +51,27 @@ display: flex;
   padding-right: 20px;
   width: 1396px;
   height: 90px;
+  color: black;
+}
+
+.question {
+  font-size: 24px;
+  font-size: large;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin-top: 150px;
+
+}
+#options div {
+  margin-bottom: 10px; /
+}
+
+#timer{
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute; 
+  top: -50px;      
+  right: 20px; 
 }
