@@ -46,6 +46,7 @@ const questions = [
 let currentQuestion = 0;
 let timer;
 let time= 60;
+let score = 0;
 
 function  displayQuestion(){
     const quiz = questions[currentQuestion];
@@ -101,23 +102,39 @@ function submitAnswer() {
   const userAnswer = selected.value;
   const correctAnswer = questions[currentQuestion].correct;
 
+  const feedback = document.getElementById("feedback") || (() => {
+    const div = document.createElement("div");
+    div.id = "feedback";
+    div.style.marginTop = "10px";
+    div.style.fontWeight = "bold";
+    div.style.fontSize = "18px";
+    document.getElementById("options").appendChild(div);
+    return div;
+  })();
+
   if (userAnswer === correctAnswer) {
-    console.log("Correct answer!");
+   feedback.innerText = "Answer is correct";
+    feedback.style.color = "black";
+    score++;
+
   } else {
-    console.log("Wrong answer!");
+    feedback.innerText = `wrong answer! Correct answer: ${correctAnswer}`;
+    feedback.style.color = "black";
   }
 
   clearInterval(timer);
-  nextPage();
+  setTimeout(nextPage, 3000);
 }
 
 
 function nextPage() {
   currentQuestion++;
+  const feedbackDiv = document.getElementById("feedback");
+  if (feedbackDiv) feedbackDiv.remove();
   if (currentQuestion < questions.length) {
     displayQuestion();
   } else {
-    document.getElementById("question").innerText = "🎉 Quiz Finished!";
+    document.getElementById("question").innerText = ` Quiz Finished!Score: ${score}/${questions.length}`;
     document.getElementById("options").innerHTML = "";
     document.getElementById("timer").innerText = "";
   }
