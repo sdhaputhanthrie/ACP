@@ -20,6 +20,26 @@ const questions = [
     question: "Which method is used to print content in the console?",
     options: ["print()", "console.log()", "display()", "write()", "log.print()"],
     correct: "console.log()"
+  },
+  {
+    question: "Which keyword is used to declare a variable in JavaScript?",
+    options: ["var", "int", "string", "char", "float"],
+    correct: "var"
+  },
+  {
+  question: "What does HTML stand for?",
+    options: [
+      "Hyperlinks and Text Markup Language",
+      "Home Tool Markup Language",
+      "Hyper Text Markup Language",
+      "Hyper Tool Main Language",
+      "Hyper Transfer Markup Language"],
+      correct: "Hyper Text Markup Language"
+    },
+    {
+    question: "Which method displays an alert box in JavaScript?",
+    options: ["alert()", "prompt()", "show()", "display()", "message()"],
+    correct: "alert()"
   }
 ];
 
@@ -67,11 +87,40 @@ function updateTimerDisplay(timerBox) {
   let minutes = Math.floor(time / 60);
   let seconds = time % 60;
   
-  let display = 
+     timerBox.innerText =
     (minutes < 10 ? "0" + minutes : minutes) + ":" + 
     (seconds < 10 ? "0" + seconds : seconds);
+ 
+}
 
-  timerBox.innerText = display;
+function submitAnswer() {
+  const selected = document.querySelector('input[name="ans"]:checked');
+  if (!selected) {
+    return;
+  }
+  const userAnswer = selected.value;
+  const correctAnswer = questions[currentQuestion].correct;
+
+  if (userAnswer === correctAnswer) {
+    console.log("Correct answer!");
+  } else {
+    console.log("Wrong answer!");
+  }
+
+  clearInterval(timer);
+  nextPage();
+}
+
+
+function nextPage() {
+  currentQuestion++;
+  if (currentQuestion < questions.length) {
+    displayQuestion();
+  } else {
+    document.getElementById("question").innerText = "🎉 Quiz Finished!";
+    document.getElementById("options").innerHTML = "";
+    document.getElementById("timer").innerText = "";
+  }
 }
 
 window.onload = displayQuestion;
