@@ -131,12 +131,16 @@ function nextPage() {
   currentQuestion++;
   const feedbackDiv = document.getElementById("feedback");
   if (feedbackDiv) feedbackDiv.remove();
+  const optionsDiv = document.getElementById("options");
+  const submitBtn = optionsDiv.querySelector("button");
+
   if (currentQuestion < questions.length) {
     displayQuestion();
   } else {
     document.getElementById("question").innerText = ` Quiz Finished!Score: ${score}/${questions.length}`;
-    document.getElementById("options").innerHTML = "";
-    document.getElementById("timer").innerText = "";
+     optionsDiv.innerHTML = "";
+     document.getElementById("question").style.textAlign = "center";
+      document.getElementById("timer").innerText = "";
   }
 }
 
